@@ -10,6 +10,13 @@ st.set_page_config(page_title="Heart Disease Prediction", layout="centered")
 st.title("❤️ Heart Disease Prediction System")
 st.write("Enter patient details below to check the risk of heart disease.")
 
+st.markdown("""
+        <style>
+            .main{
+            background-color: #F5F5F5;
+            }
+""", unsafe_allow_html=True)
+
 # Input fields for 13 features
 age = st.number_input("Age", min_value=1, max_value=120, value=50)
 sex = st.selectbox("Sex (1 = Male, 0 = Female)", [0, 1])
